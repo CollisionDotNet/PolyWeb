@@ -1,0 +1,229 @@
+﻿:root {
+    --logo-side-scale: 6vw;
+}
+
+.logo {
+    width: var(--logo-side-scale);
+    height: var(--logo-side-scale);
+    position: relative;
+    margin: 18px;
+}
+
+@keyframes pupilmove {
+    0% {
+        transform: translateX(0px);
+    }
+
+    15% {
+        transform: translateX(calc(var(--logo-side-scale) * 0.02));
+    }
+
+    35% {
+        transform: translateX(calc(var(--logo-side-scale) * 0.02));
+    }
+
+    65% {
+        transform: translateX(calc(var(--logo-side-scale) * -0.02));
+    }
+
+    85% {
+        transform: translateX(calc(var(--logo-side-scale) * -0.02));
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.logolink {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tophair {
+    width: 91%;
+    height: 2%;
+    position: absolute;
+    left: 5%;
+    background-color: white;
+    border-radius: 3% 3% 0 0;
+}
+.lefthair {
+    top: 2%;
+    width: 2%;
+    height: 54%;
+    position: absolute;
+    left: 5%;
+    background-color: white;
+}
+.righthair {
+    top: 2%;
+    width: 2%;
+    height: 54%;
+    position: absolute;
+    right: 4%;
+    background-color: white;
+}
+.leftbottomhair {
+    top: 56%;
+    width: 7%;
+    height: 2%;
+    position: absolute;
+    left: 5%;
+    background-color: white;
+    border-radius: 0 0 0 3%;
+}
+.rightbottomhair {
+    top: 56%;
+    width: 7%;
+    height: 2%;
+    position: absolute;
+    right: 4%;
+    background-color: white;
+    border-radius: 0 0 3% 0;
+}
+
+.outertophead {
+    width: 77%;
+    height: 3%;
+    position: absolute;
+    left: 12%;
+    top: 15%;
+    background-color: white;
+    border-radius: 3% 3% 0 0;
+    
+}
+
+.outerlefthead {
+    top: 18%;
+    width: 3%;
+    height: 46%;
+    position: absolute;
+    left: 12%;
+    background-color: white;
+}
+
+.outerrighthead {
+    top: 18%;
+    width: 3%;
+    height: 46%;
+    position: absolute;
+    right: 11%;
+    background-color: white;
+}
+
+.innertophead {
+    width: 63%;
+    height: 3%;
+    position: absolute;
+    left: 19%;
+    top: 21%;
+    background-color: white;
+    border-radius: 3% 3% 0 0;
+}
+
+.innerlefthead {
+    top: 24%;
+    width: 3%;
+    height: 38%;
+    position: absolute;
+    left: 19%;
+    background-color: white;
+}
+
+.innerrighthead {
+    top: 24%;
+    width: 3%;
+    height: 38%;
+    position: absolute;
+    right: 18%;
+    background-color: white;
+}
+
+.innerchin {
+    position: absolute;
+    bottom: 8%;
+    left: 19%;
+    width: 57%;
+    height: 28.5%;
+    border-radius: 0 0 var(--logo-side-scale) var(--logo-side-scale);
+    border-bottom: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-left: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-right: calc(var(--logo-side-scale) * 0.03) solid white;
+}
+
+.outerchin {
+    position: absolute;
+    bottom: 0%;
+    left: 12%;
+    width: 71%;
+    height: 35.5%;
+    border-radius: 0 0 var(--logo-side-scale) var(--logo-side-scale);
+    border-bottom: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-left: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-right: calc(var(--logo-side-scale) * 0.03) solid white;
+}
+
+.lefteye {
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    background-color: white;
+    border-radius: 50%;
+    top: 30%;
+    left: 27%;
+}
+
+.righteye {
+    position: absolute;
+    width: 16%;
+    height: 16%;
+    background-color: white;
+    border-radius: 50%;
+    top: 30%;
+    right: 26%;
+}
+
+.leftpupil {
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    background-color: black;
+    border-radius: 50%;
+    top: 34.5%;
+    left: 31%;
+}
+
+.rightpupil {
+    position: absolute;
+    width: 8%;
+    height: 8%;
+    background-color: black;
+    border-radius: 50%;
+    top: 34.5%;
+    right: 30%;
+}
+
+.logo:hover .leftpupil {
+    animation: pupilmove 3s ease-in-out;
+}
+
+.logo:hover .rightpupil {
+    animation: pupilmove 3s ease-in-out;
+}
+
+.smile {
+    position: absolute;
+    bottom: 24%;
+    left: 42%;
+    width: 10%;
+    height: 5%;
+    border-radius: 0 0 var(--logo-side-scale) var(--logo-side-scale);
+    border-bottom: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-left: calc(var(--logo-side-scale) * 0.03) solid white;
+    border-right: calc(var(--logo-side-scale) * 0.03) solid white;
+}
+
+
+

@@ -1,0 +1,124 @@
+﻿.container {    
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-image: url("../image/avto1.jpg");
+    background-size: 100%;
+    justify-content: center;
+}
+
+
+.container:active {
+    animation: scaling 2s infinite linear;
+}
+
+.hovercar {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    background-image: url("../image/avto2.png");
+    background-size: 100%;
+    transition: none;
+    background-repeat: no-repeat;
+}
+
+.container:hover .hovercar {
+    bottom: -30px;
+    left: 0px;
+    transition: bottom 1.5s, left 1.5s, color 1.5s;
+}
+
+.container:active .hovercar {
+    bottom: -200px;
+    left: -200px;
+    transition: none;
+}
+
+.hovertext {
+    color: transparent;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 30px;
+}
+
+.container:hover .hovertext {
+    color: red;
+    transition: color;
+    transition-duration: 0s;
+    transition-delay: 1.2s;  
+}
+
+.container:active .hovertext {
+    color: transparent;
+    transition:none;
+}
+
+.activecar {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    background-image: url("../image/avto3.png");
+    background-size: 100%;
+    opacity: 0;
+    background-repeat: no-repeat;
+}
+
+.container:active .activecar {
+    opacity: 1;
+    transition: opacity 1s;
+    animation: rotation 2s infinite linear;
+    animation-delay: 1s;
+}
+
+.activetext {
+    position: absolute;
+    top: 30px;
+    left: 8px;
+    transform: rotate(-25deg);
+    color: transparent;
+}
+
+.container:active .activetext {
+    color: dodgerblue;
+    transition: color 1s;
+}
+
+
+@keyframes rotation {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(-359deg);
+    }
+}
+
+@keyframes scaling {
+    0%{
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.9);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    75% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
